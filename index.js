@@ -9,6 +9,8 @@ app.use(bodyParser.json());
 
 require('./routes/routes.js')(app);
 
+require('./config/elasticsearch')
+
 app.listen(port, () => {
     console.log(`Servidor rodando na porta ${port}`)
 });
